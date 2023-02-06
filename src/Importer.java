@@ -1,40 +1,51 @@
 public class Importer {
+
     private String name;
-    private String address;
-    private String phoneNumber; 
-    public Importer(){
-        this.name="";
-        this.address=";" ;
-        this.phoneNumber="";
-    }
+    private String address  ;
+    private String phoneNumber;
+
     public Importer(String name, String address, String phoneNumber) {
         this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
-    }    public String getName()
-    {
+    }
+
+    public Importer() {
+        this.name = "Kalata";
+        this.address = "Burgas";
+        this.phoneNumber = "0882020477";
+    }
+
+    public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getAddress() {
         return address;
-    }    public void setAddress(String address) {
+    }
+
+    public void setAddress(String address) {
         this.address = address;
     }
-    public String getPhoneNumber()
-    {
+
+    public String getPhoneNumber() {
         return phoneNumber;
-    }    public void setPhoneNumber(String phoneNumber) {
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
     @Override
     public String toString() {
-        return "Manufacturer{" +
+        return "Provider{" +
                 "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                ", city='" + address + '\'' +
+                ", age=" + phoneNumber +
                 '}';
     }
 }
