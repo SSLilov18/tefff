@@ -15,7 +15,7 @@ public class Main {
             System.out.println("3. Print all medicines with price and specific provider");
             System.out.println("4. Print all medicines imported from a specific person");
             System.out.println("5. Print all importers");
-            System.out.println("6. Exit");
+            System.out.println("6. Exit ");
             System.out.println();
             System.out.print("Choose: ");
             int n = scanner.nextInt();
